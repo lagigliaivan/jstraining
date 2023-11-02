@@ -7,7 +7,7 @@ export function input() : string {
 function calculate(instructions : string) : number {
     let floor = 0
     for (let i=0; i < instructions.length; i++) {
-         if (instructions.charAt(i) == '(' ){
+         if (instructions.charAt(i) === '(' ){
             floor++
          } else {
             floor--
@@ -25,4 +25,4 @@ function main_first() {
     console.log("result:" + floor)
 }
 
-//main_first()
+main_first()
